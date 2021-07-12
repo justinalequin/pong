@@ -32,7 +32,9 @@ body {
 }
 
 .player-paddle {
+
     left: 0;
+    position: absolute;
 }
 
 .computer-paddle {
