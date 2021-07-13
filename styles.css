@@ -52,6 +52,7 @@ h2 {
 .easy {
     margin-right: 20px;
     height: 50px;
+    width: 100px;
     font-weight: bolder;
     
 }
@@ -59,6 +60,14 @@ h2 {
 .impossible {
     margin-left: 20px;
     height: 50px;
+    width: 100px;
+    font-weight: bolder;
+}
+
+.refresh {
+    margin-left: 40px;
+    height: 50px;
+    width: 100px;
     font-weight: bolder;
 }
 

@@ -17,6 +17,8 @@ let computerPaddleYPosition = 0;
 let computerPaddleYVelocity = 1;
 
 // Update the pong world
+
+
 function update() {
 
 
@@ -27,14 +29,8 @@ function update() {
 
     // Apply the y-position 
     computerPaddle.style.top = `${computerPaddleYPosition}px`;
-    computerPaddleYPosition = ballYPosition -50 ;
-    // if (computerPaddleYPosition > 300) {
-    //     computerPaddleYVelocity = computerPaddleYVelocity * -1;
-    // }
-    // if (computerPaddleYPosition <= 0) {
-    //     computerPaddleYVelocity = computerPaddleYVelocity * -1;
-    // }
-       
+    computerPaddleYPosition = ballYPosition  -3;
+   
 }
 
 // Call the update() function every 35ms
@@ -66,18 +62,7 @@ function updateBall() {
         ball.style.backgroundColor = 'red'
     }
     
-    // if (ballXPosition === 350 && ballYPosition === 50){
-    //     ball.style.backgroundColor = 'green'
-    // }
 
-    //if (ballXPosition === 660){console.log('It hit the number!!!')}
-    // if ( ballXPosition >= 663) {
-    //     ball.style.backgroundColor = 'red'
-    //     console.log('The Ball Should Be Red', ballXPosition)
-
-    // }
-
-    //console.clear()
 }
 
 
@@ -135,14 +120,7 @@ function paddleHit() {
             ballYVelocity = ballYVelocity * 1;
             ballXVelocity = ballXVelocity * -1;
             ball.style.backgroundColor = 'blue';
-            // console.log("LEFT PADDLE")
-            // console.log('The condition at least got triggered up above')
-            // console.log('ballXPosition', ballXPosition)
-            // console.log('ballYPosition', ballYPosition)
-            // console.log('paddleStart is ', paddleStart)
-            // console.log('paddleStart plus 100 is ', paddleStart + 100)
-            //setTimeout(alert("CHECK CONSOLE"), 100);
-            //console.clear()
+           
         }
     
         }
@@ -191,18 +169,7 @@ function reset() {
         setTimeout(alert('USER SCORE: '+ leftScore + ' COMPUTER SCORE: ' + rightScore), 100);
     }    
 
-        //ADD PAUSE AFTER COLOR CHANGE *********************
-    // console.log("RESET/ SCORE")
-    // console.log('computerPaddleYPosition is ' ,computerPaddleYPosition);
-    // console.log('computerPaddleYPosition plus 100 is ' ,computerPaddleYPosition + 100);
-    // console.log('ballYPosition is ', ballYPosition )
-    // console.log('ballXPosition is ' ,ballXPosition)
-    
-        
-      
-    
-        //console.clear()
-    
+         
     
 }
 
