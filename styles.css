@@ -1,17 +1,105 @@
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #333;
+    background-image: url(matrix.jpg);
     height: 100vh;
+}
+
+.master {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.subMaster {
+
+}
+
+
+
+h1 {
+    padding-left: 400px;
+    text-shadow: 0 0 10px black, 0 0 15px lightgray;
+
+}
+
+h2 {
+    color: #C7ECCB;
+    text-shadow: 0 0 10px black, 0 0 15px lightgray;
+    font-size: 40px;
+    
+}
+
+.text1 {
+    margin-left: 125px;
+}
+
+.text2 {
+    margin-left: 40px;
+}
+
+.buttons {
+    display: flex;
+   
+    justify-content: center;
+    
+    margin-bottom: 10px;
+}
+
+.easy {
+    margin-right: 20px;
+    height: 50px;
+    font-weight: bolder;
+    
+}
+
+.impossible {
+    margin-left: 20px;
+    height: 50px;
+    font-weight: bolder;
+}
+
+.addPics {
+    display: flex;
+
+}
+
+.user {
+
+    
+}
+
+.computer{
+
+    padding-left: 25px;
+    
+}
+
+.neo {
+    height: 350px;
+    opacity: 90%;
+}
+
+.smith {
+    height: 350px;
+    width: 250px;
+    opacity: 90%;
 }
 
 .game-area {
     width: 700px;
     height: 500px;
-    background-color: white;
+    background-color:lightgray;
     position: relative;
+    opacity: 95%;
+    border-left: dotted red 5px;
+    border-right: dotted red 5px;
+    border-top:dotted green 5px;
+    border-bottom:dotted green 5px;
+    margin-bottom: 10px;
 }
 
 .ball {
@@ -21,6 +109,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 50%;
+    box-shadow: 8px 8px #C7ECCB;
 }
 
 .paddle {
@@ -29,15 +119,23 @@ body {
     top: 100px;
     position: absolute;
     background-color: black;
+   
 }
 
 .player-paddle {
 
     left: 0;
     position: absolute;
+    
 }
 
 .computer-paddle {
     right: 0;
+}
+
+.name {
+    justify-content: center;
+    font-size: 60px;
+    color: #C7ECCB;
 }
 
